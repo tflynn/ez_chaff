@@ -1,0 +1,12 @@
+README
+========================================================================
+EzChaff provides a simple way of adding chaff to a string in a
+predictable manner and subsequently removing that chaff.
+
+Usage
+
+require 'rubygems'
+gem 'ez_chaff','0.1'
+require 'ez_chaff'
+chaffed_string = EzChaff.chaff(string)
+unchaffed_string = EzChaff.unchaff(string)
