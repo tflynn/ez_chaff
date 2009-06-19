@@ -6,7 +6,7 @@ predictable manner and subsequently removing that chaff.
 Usage
 
 require 'rubygems'
-gem 'ez_chaff','0.1'
+gem 'ez_chaff','0.2'
 require 'ez_chaff'
 chaffed_string = EzChaff.chaff(string)
 unchaffed_string = EzChaff.unchaff(string)
