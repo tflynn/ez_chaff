@@ -2,9 +2,9 @@ module EzChaff
   
   def self.randomize_full_ascii(length = 10)
     unless defined?(EzChaff::RANDOM_STRING_SEED)
-      chars = Array.new(255,nil)
-      255.times do |char|
-        chars[char] = (char + 1).chr
+      chars = Array.new(126 - 32 + 1,nil)
+      32.upto(126) do |char|
+        chars[char - 32] = char.chr
       end
       EzChaff.const_set('RANDOM_STRING_SEED',chars)
     end
